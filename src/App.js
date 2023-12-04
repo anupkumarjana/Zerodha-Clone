@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
@@ -10,24 +11,17 @@ import Support from "./pages/Support";
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-      </Routes>
-      <Routes>
-        <Route path="/about" element={<About/>}/>
-      </Routes>
-      <Routes>
-        <Route path="/pricing" element={<Pricing />}/>
-      </Routes>
-      <Routes>
-        <Route path="/products" element={<Products />}/>
-      </Routes>
-      <Routes>
-        <Route path="/signup" element={<Signup />}/>
-      </Routes>
-      <Routes>
-        <Route path="/support" element={<Support />}/>
-      </Routes>
+      <Header />
+        {" "}
+        {/* Adjust padding to accommodate fixed header */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/support" element={<Support />} />
+        </Routes>
     </BrowserRouter>
   );
 }

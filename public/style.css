@@ -3,3 +3,14 @@
 body {
   font-family: "Inter", serif;
 }
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust as needed based on layering with other elements */
+  /* Additional styling */
+  background-color: #fff;
+  /* ... */
+}
