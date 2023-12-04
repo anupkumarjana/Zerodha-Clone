@@ -159,7 +159,7 @@ export default function Home() {
 
       {/* --------------------------------------6th------------------------------------------------- */}
 
-      <div className="flex flex-col justify-center items-center gap-6 pb-28 px-44">
+      <div className="flex flex-col justify-center items-center gap-6 pb-10 px-44">
         <h2 className="text-3xl font-medium">Open a Zerodha account</h2>
         <p className="text-lg text-slate-600">
           Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and

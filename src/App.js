@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Pricing from "./pages/Pricing";
@@ -12,8 +13,6 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-        {" "}
-        {/* Adjust padding to accommodate fixed header */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -22,6 +21,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/support" element={<Support />} />
         </Routes>
+        <Footer/>
     </BrowserRouter>
   );
 }
